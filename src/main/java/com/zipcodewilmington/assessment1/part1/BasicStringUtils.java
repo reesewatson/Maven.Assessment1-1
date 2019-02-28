@@ -9,7 +9,9 @@ public class BasicStringUtils {
      * @return string with identical content, and the first character capitalized
      */
     public static String camelCase(String str) {
-        return null;
+        char cap = Character.toUpperCase(str.charAt(0));
+
+        return cap + str.substring(1);
     }
 
     /**
@@ -17,7 +19,13 @@ public class BasicStringUtils {
      * @return string with identical contents, in the reverse order
      */
     public static String reverse(String str) {
-        return null;
+        String reversed = "";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+
+        return reversed;
     }
 
     /**
@@ -25,7 +33,8 @@ public class BasicStringUtils {
      * @return string with identical contents, in reverse order, with first character capitalized
      */
     public static String reverseThenCamelCase(String str) {
-        return null;
+        String reversed = reverse(str);
+        return camelCase(reversed);
     }
 
 
@@ -34,7 +43,7 @@ public class BasicStringUtils {
      * @return string with identical contents excluding first and last character
      */
     public static String removeFirstAndLastCharacter(String str) {
-        return null;
+        return str.substring(1, str.length() - 1);
     }
 
     /**
@@ -42,6 +51,16 @@ public class BasicStringUtils {
      * @return string with identical characters, each with opposite casing
      */
     public static String invertCasing(String str) {
-        return null;
+        String string = "";
+        for(int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if(Character.isLowerCase(c)) {
+                string += Character.toUpperCase(c);
+            } else {
+                string += Character.toLowerCase(c);
+            }
+        }
+
+        return string;
     }
 }
