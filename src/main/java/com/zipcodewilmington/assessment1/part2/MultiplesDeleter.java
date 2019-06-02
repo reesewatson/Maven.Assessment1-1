@@ -20,10 +20,7 @@ public class MultiplesDeleter {
                 odds[oddsIndex] = ints[i];
                 oddsIndex++;
             }
-        }
-
-
-        return Arrays.copyOf(odds, oddsIndex);
+        } return Arrays.copyOf(odds, oddsIndex);
     }
 
     /**
@@ -40,9 +37,7 @@ public class MultiplesDeleter {
                 evens[evensIndex] = ints[i];
                 evensIndex++;
             }
-        }
-
-        return Arrays.copyOf(evens, evensIndex);
+        } return Arrays.copyOf(evens, evensIndex);
     }
 
     /**
@@ -59,9 +54,7 @@ public class MultiplesDeleter {
                 threes[index3] = ints[i];
                 index3++;
             }
-        }
-
-        return Arrays.copyOf(threes, index3);
+        } return Arrays.copyOf(threes, index3);
     }
 
     /**
@@ -79,8 +72,6 @@ public class MultiplesDeleter {
                 newArray[nIndex] = ints[i];
                 nIndex++;
             }
-        }
-
-        return Arrays.copyOf(newArray, nIndex);
+        } return Arrays.copyOf(newArray, nIndex);
     }
 }

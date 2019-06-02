@@ -17,9 +17,7 @@ public class IntegerUtils {
 
         for(int i = 0; i <= n; i++) {
             total += i;
-        }
-
-        return total;
+        } return total;
     }
 
     /**
@@ -27,13 +25,12 @@ public class IntegerUtils {
      * @return the product of all integers between 0 and not including `n`
      */
     public static Integer getProductOfN(Integer n) {
+        //Don't forget to begin at 1, because we are calculating the product of digits.
         int total = 1;
 
         for(int i = 1; i <= n; i++) {
             total *= i;
-        }
-
-        return total;
+        } return total;
     }
 
     /**

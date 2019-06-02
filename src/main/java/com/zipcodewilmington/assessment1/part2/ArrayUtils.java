@@ -19,10 +19,7 @@ public class ArrayUtils {
             if(objectArray[i].equals(objectToCount)) {
                 count++;
             }
-        }
-
-
-        return count;
+        } return count;
     }
 
     /**
@@ -43,9 +40,7 @@ public class ArrayUtils {
                 removedArray[n] = objectArray[i];
                 n++;
             }
-        }
-
-        return removedArray;
+        } return removedArray;
     }
 
     /**
@@ -65,9 +60,7 @@ public class ArrayUtils {
                 mostCommon = current;
                 mostCount = currentCount;
             }
-        }
-
-        return mostCommon;
+        } return mostCommon;
     }
 
 
@@ -88,9 +81,7 @@ public class ArrayUtils {
                 leastCommon = current;
                 leastCount = currentCount;
             }
-        }
-
-        return leastCommon;
+        } return leastCommon;
     }
 
     /**
@@ -107,8 +98,6 @@ public class ArrayUtils {
         for (int i = 0; i < objectArrayToAdd.length; i++) {
             merged[mergedIndex] = objectArrayToAdd[i];
             mergedIndex++;
-        }
-
-        return merged;
+        } return merged;
     }
 }

@@ -14,8 +14,7 @@ public class Palindrome {
                     pDromcount++;
                 }
             }
-        }
-        return pDromcount;
+        } return pDromcount;
     }
 
     private boolean isPaladromic(String str){
@@ -23,7 +22,6 @@ public class Palindrome {
             if (str.charAt(i) != str.charAt(str.length() - i - 1)) {
                 return false;
             }
-        }
-        return true;
+        } return true;
     }
 }

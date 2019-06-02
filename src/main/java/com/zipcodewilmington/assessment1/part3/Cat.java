@@ -3,7 +3,7 @@ package com.zipcodewilmington.assessment1.part3;
 /**
  * Created by leon on 2/16/18.
  */
-public class Cat extends Pet {
+public class Cat extends Pet implements Animal {
     /**
      * @param name name of this Cat
      * @param age age of this Cat
