@@ -46,15 +46,16 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with numbers indivisible by 3 removed
      */
     public Integer[] deleteMultiplesOf3(Integer[] ints) {
-        Integer[] threes = new Integer[ints.length];
-        int index3 = 0;
-
-        for (int i = 0; i < ints.length; i++) {
-            if(ints[i] % 3 != 0) {
-                threes[index3] = ints[i];
-                index3++;
-            }
-        } return Arrays.copyOf(threes, index3);
+        return deleteMultiplesOfN(ints, 3);
+//        Integer[] threes = new Integer[ints.length];
+//        int index3 = 0;
+//
+//        for (int i = 0; i < ints.length; i++) {
+//            if(ints[i] % 3 != 0) {
+//                threes[index3] = ints[i];
+//                index3++;
+//            }
+//        } return Arrays.copyOf(threes, index3);
     }
 
     /**
